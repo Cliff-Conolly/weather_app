@@ -1,0 +1,1 @@
+// Responsible for interacting with the API and getting data
