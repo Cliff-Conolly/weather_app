@@ -11,8 +11,8 @@ const query = `${id}?apikey=${apiKey}`;
 const response = await fetch(base + query);
 const data = await response.json();
 
-// return data[0];
-console.log(data[0]);
+return data[0];
+// console.log(data[0]);
 
 
 }; 
@@ -27,21 +27,21 @@ const getCity = async (city) => {
   const response = await fetch(base + query);
   const data = await response.json();
 
-  // return data[1];
-  console.log(data[1]);
+  return data[1];
+  // console.log(data[1]);
  
  
 };
 
-getCity('windsor');
-//   .then(data => console.log(data))
-//   .catch(err => console.log(err));
+// getCity('windsor');
+// //   .then(data => console.log(data))
+// //   .catch(err => console.log(err));
 
-getWeather("326270");
+// getWeather("326270");
 
 // getCity('windsor').then(data => {
 //   return getWeather(data.Key);
 // }).then(data => {
-//   console.log(data);
+//   // console.log(data);
 // }).catch(err => console.log(err));
 
