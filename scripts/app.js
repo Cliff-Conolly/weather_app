@@ -4,6 +4,12 @@ const cityForm = document.querySelector('form');
 const card = document.querySelector('.card');
 const details = document.querySelector('.details');
  
+const updateUI = (data) => {
+
+  const cityDets = data.cityDets;
+  const weather = data.weather;
+
+};
 
 const updateCity = async (city) => {
  
@@ -25,7 +31,7 @@ cityForm.addEventListener('submit', e => {
 
   // update the ui with new city
   updateCity(city)
-    .then(data => console.log(data))
+    .then(data => updateUI(data))
     .catch(err => console.log(err));
    
 });
