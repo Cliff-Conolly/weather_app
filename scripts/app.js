@@ -9,6 +9,8 @@ const icon = document.querySelector('.icon img');
  
 const updateUI = (data) => {
 
+  console.log(data);
+
 
   // destructure properties
   const { cityDets, weather} = data;
