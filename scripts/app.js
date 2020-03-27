@@ -25,6 +25,16 @@ details.innerHTML = `
   </div>
 `;
 
+// update the night/day & icon images
+
+let timeSrc = null;
+if(weather.IsDayTime){
+  timeSrc = 'img/day.svg';
+} else {
+  timeSrc = 'img/night.svg'
+}
+time.setAttribute('src', timeSrc); 
+
 // remove the d- one class if present
  if(card.classList.contains('d-none')) {
    card.classList.remove('d-none');
