@@ -26,6 +26,8 @@ details.innerHTML = `
 `;
 
 // update the night/day & icon images
+const iconSrc = `img/icons/${weather.WeatherIcon}.svg`;
+icon.setAttribute('src', iconSrc);
 
 let timeSrc = null;
 if(weather.IsDayTime){
