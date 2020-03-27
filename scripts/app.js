@@ -6,6 +6,7 @@ const details = document.querySelector('.details');
  
 const updateUI = (data) => {
 
+  console.log(data);
   const cityDets = data.cityDets;
   const weather = data.weather;
 
@@ -19,7 +20,10 @@ details.innerHTML = `
   </div>
 `;
 
-
+// remove the d- one class if present
+ if(card.classList.contains('d-none')) {
+   card.classList.remove('d-none');
+ }
 };
 
 const updateCity = async (city) => {
